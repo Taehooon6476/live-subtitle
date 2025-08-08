@@ -4,9 +4,9 @@ var util_utf8_node = require("@aws-sdk/util-utf8-node")
 const { TranscribeStreamingClient, StartStreamTranscriptionCommand} = require("@aws-sdk/client-transcribe-streaming");
 const { TranslateClient, TranslateTextCommand} = require("@aws-sdk/client-translate");
 
-const REGION = process.env.REGION || "ap-south-1";
+const REGION = process.env.REGION || "us-east-1";
 //const TABLE_NAME = process.env.TABLE_NAME || "arn:aws:dynamodb:ap-south-1:776017853864:table/LiveSubtitle-edge-VTT-CaptionsDynamoTable-1";
-const TABLE_NAME = process.env.TABLE_NAME || "LiveSubtitle-edge-VTT-CaptionsDynamoTable-1JWJ5D6E3OPI1";
+const TABLE_NAME = process.env.TABLE_NAME || "SubtitleTable";
 const ID_PIPE = process.env.ID_PIPE || "pipe0";
 const VOCABULARYNAME = process.env.VOCABULARY_NAME;
 const LANGUAGECODE = process.env.LANGUAGE_CODE;
