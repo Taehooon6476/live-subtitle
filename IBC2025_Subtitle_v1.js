@@ -23,7 +23,7 @@ var MediaSampleRateHertz = 16000;
 
 var runFFMPEG = function(){
     const ls = spawn("ffmpeg", [
-        "-re", "-i", "udp://127.0.0.1:7950", 
+        "-re", "-i", "udp://127.0.0.1:7951", 
         "-tune", "zerolatency", 
         "-f", "wav", "-ac", "1", 
         "-fflags", "+discardcorrupt",
